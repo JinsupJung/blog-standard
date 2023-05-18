@@ -27,5 +27,5 @@ export default async function handler(req, res) {
 
   console.log('openai response = ', response)
 
-  res.status(200).json({ post: response.data.choices[0]?.text });
+  res.status(200).json({ post: JSON.parse(response.data.choices[0]?.text.split("\n").join("")) });
 }
