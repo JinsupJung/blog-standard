@@ -1,3 +1,73 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply disabled:bg-green-200 disabled:cursor-not-allowed hover:no-underline bg-green-500 tracking-wider w-full text-center text-white font-bold cursor-pointer uppercase px-4 py-2 rounded-md hover:bg-green-600 transition-colors block;
+  }
+}
+
+
+/* lib */
+.border-red {
+    border: 4px solid red;
+  }
+  
+  .border-pink {
+    border: 4px solid pink;
+  }
+  
+  .border-blue {
+    border: 4px solid blue;
+  }
+  
+  .border-green {
+    border: 4px solid green;
+  }
+  
+  .border-black {
+    border: 4px solid black;
+  }
+  
+  .border-gold {
+    border: 4px solid gold;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .flex-jc-e {
+    justify-content: flex-end;
+  }
+  
+  .flex-jc-s {
+    justify-content: flex-start;
+  }
+  
+  .flex-jc-c {
+    justify-content: center;
+  }
+  
+  .flex-jc-sb {
+    justify-content: space-between;
+  }
+  
+  .flex-ai-c {
+    align-items: center;
+  }
+  
+  .height-100p {
+    height: 100%;
+  }
+  .height-70p {
+    height: 70%;
+  }
+  .height-50p {
+    height: 50%;
+  }
+  .block {
+    display: block;
+  }
+  
