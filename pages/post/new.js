@@ -20,7 +20,7 @@ export default function NewPost(props) {
     });
     const json = await response.json();
 
-    console.log("/post/generatePost로 보낸 결과 = ", json.post.postContent);
+    // console.log("/post/generatePost로 보낸 결과 = ", json.post.postContent);
     setPostContent(json.post.postContent);
   };
 
